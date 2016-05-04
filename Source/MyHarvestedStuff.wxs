@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLDIR">
+            <Directory Id="dir36665998438621F6BB41818960BE2CEC" Name="Content" />
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="MyComponentGroupId">           
+            <Component Id="cmp67EF28D443591E695C996ABD798983F8" Directory="dir36665998438621F6BB41818960BE2CEC" Guid="{516044F8-3B66-4832-A8B4-B723852C16B8}">
+                <File Id="fil1BE961A1CBE93A449C8FFEAB7B0BAC09" KeyPath="yes" Source="$(sys.SOURCEFILEDIR)\..\Content\Content\Verdana.xnb" />
+            </Component>
+        </ComponentGroup>
+    </Fragment>
+</Wix>

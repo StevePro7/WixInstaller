@@ -21,7 +21,77 @@
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Product.wxs" />
+    <Compile Include="Source\Dialogs\BrowseDialog.wxs" />
+    <Compile Include="Source\Dialogs\CancelDialog.wxs" />
+    <Compile Include="Source\Dialogs\ErrorDialog.wxs" />
+    <Compile Include="Source\Dialogs\ExitDialog.wxs" />
+    <Compile Include="Source\Dialogs\FatalErrorDialog.wxs" />
+    <Compile Include="Source\Dialogs\FilesInUseDialog.wxs" />
+    <Compile Include="Source\Dialogs\OutOfDiskSpaceDialog.wxs" />
+    <Compile Include="Source\Dialogs\OutOfRollbackDiskSpaceDialog.wxs" />
+    <Compile Include="Source\Dialogs\PrerequisitesDialog.wxs" />
+    <Compile Include="Source\Dialogs\ProgressDialog.wxs" />
+    <Compile Include="Source\Dialogs\RequireDotNetDialog.wxs" />
+    <Compile Include="Source\Dialogs\SelectFolderDialog.wxs" />
+    <Compile Include="Source\Dialogs\ShaderWarningDialog.wxs" />
+    <Compile Include="Source\Dialogs\UserExitDialog.wxs" />
+    <Compile Include="Source\Dialogs\VerifyReadyDialog.wxs" />
+    <Compile Include="Source\Dialogs\ViewLicenseAgreementDialog.wxs" />
+    <Compile Include="Source\Dialogs\WelcomeDialog.wxs" />
+    <Compile Include="Source\Dialogs\WrongOperatingSystemDialog.wxs" />
+    <Compile Include="Source\EmbeddedPrerequisites.wxs" />
+    <Compile Include="Source\Files.wxs" />
+    <Compile Include="Source\MyHarvestedStuff.wxs" />
+    <Compile Include="Source\NuclexSetupDetector.wxs" />
+    <Compile Include="Source\Setup.wxs" />
+    <Compile Include="Source\UserInterface.wxs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\" />
+    <Folder Include="Content\Content\" />
+    <Folder Include="Documents\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\InstallerBitmaps\" />
+    <Folder Include="Resources\png\" />
+    <Folder Include="Source\" />
+    <Folder Include="Source\Dialogs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Content\Verdana.xnb" />
+    <Content Include="Content\TestInstallerGame.exe" />
+    <Content Include="Documents\license.rtf" />
+    <Content Include="Resources\DirectX-64.bmp" />
+    <Content Include="Resources\DotNet-64.bmp" />
+    <Content Include="Resources\Game.ico" />
+    <Content Include="Resources\GreenCheck-16.ico" />
+    <Content Include="Resources\GreenCheck-24.ico" />
+    <Content Include="Resources\InstallerBitmaps\default-banner.bmp" />
+    <Content Include="Resources\InstallerBitmaps\default-dialog.bmp" />
+    <Content Include="Resources\InstallerBitmaps\exclamic.bmp" />
+    <Content Include="Resources\InstallerBitmaps\info.bmp" />
+    <Content Include="Resources\InstallerBitmaps\new.bmp" />
+    <Content Include="Resources\InstallerBitmaps\up.bmp" />
+    <Content Include="Resources\png\DirectX9-142.png" />
+    <Content Include="Resources\png\DirectX9-32.png" />
+    <Content Include="Resources\png\DirectX9-48.png" />
+    <Content Include="Resources\png\DirectX9-64.png" />
+    <Content Include="Resources\png\DotNet-32.png" />
+    <Content Include="Resources\png\DotNet-48.png" />
+    <Content Include="Resources\png\DotNet-513.png" />
+    <Content Include="Resources\png\DotNet-64.png" />
+    <Content Include="Resources\png\DotNet4-64.png" />
+    <Content Include="Resources\png\GreenCheck.png" />
+    <Content Include="Resources\png\InvertedGreenCheck.png" />
+    <Content Include="Resources\png\InvertedRedX.png" />
+    <Content Include="Resources\png\RedX.png" />
+    <Content Include="Resources\png\Xna-194.png" />
+    <Content Include="Resources\png\Xna-32.png" />
+    <Content Include="Resources\png\Xna-48.png" />
+    <Content Include="Resources\png\Xna-64.png" />
+    <Content Include="Resources\RedX-16.ico" />
+    <Content Include="Resources\RedX-24.ico" />
+    <Content Include="Resources\Xna-64.bmp" />
+    <Content Include="Source\Config.wxi" />
   </ItemGroup>
   <Import Project="$(WixTargetsPath)" />
   <!--
